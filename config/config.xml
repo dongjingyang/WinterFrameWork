@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<winter >
+	<library path="SmallCompoent.dll" type = "Dcom" delayload = "false">
+		<beans>
+		 	<bean name="smallCompoent">{5655A698-ED5F-47cc-B132-11249F4D823A}</bean>
+		</beans>
+	</library>
+	<library path="../lib/injectBeanImpl.dll" type ="DIlibrary" name="injectBeanImpl">
+		<beans>
+			<bean class="LowerAction" name="TheAction" singleton = "true">
+				<properties>
+					<property name="Message" type="char*">
+						<value>Hello</value>
+					</property>
+				</properties>
+			</bean>
+		</beans>
+	</library>
+	<library path="../lib/injectBeanImpl.dll" type="xcom">
+		<beans>
+			<bean class="LowerAction" name="TheAction" singleton = "true">
+				<properties>
+					<property name="Message" type="char*">
+						<value>Hello</value>
+					</property>
+				</properties>
+			</bean>
+		</beans>
+	</library>
+	<library path="../lib/injectBeanImpl.dll" type="DIlibrary">
+		<beans>
+			<bean class="LowerAction" name="TheAction" singleton = "true">
+				<properties>
+					<property name="Message" type="char*">
+						<value>Hello</value>
+					</property>
+				</properties>
+			</bean>
+		</beans>
+	</library>
+</winter>
