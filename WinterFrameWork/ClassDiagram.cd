@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Winter::FileLogger" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAAAAAAAAAAAHACAAAAAAAAAABQAABAAEAAAA=</HashCode>
+      <FileName>FileLogger.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Winter::ILogAdapter" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAGACAAAAAAAAAIAQAABAAAAAAA=</HashCode>
+      <FileName>ILogAdapter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Winter::WinterException" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACgAAAAAACAAAAAAAAAAAAAAAAAAAAAAAACAEAAAAQ=</HashCode>
+      <FileName>WinterException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Winter::InitException" Collapsed="true">
+    <Position X="6.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WinterException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Winter::InjectionException" Collapsed="true">
+    <Position X="15.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WinterException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Winter::MissDefinitionEx" Collapsed="true">
+    <Position X="1.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WinterException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Winter::NonValueEx" Collapsed="true">
+    <Position X="3.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WinterException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Winter::NonInstanceEx" Collapsed="true">
+    <Position X="5.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WinterException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Winter::NotFoundEx" Collapsed="true">
+    <Position X="8" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WinterException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Winter::ReduplicateEx" Collapsed="true">
+    <Position X="10.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>WinterException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Winter::XMLParsingEx" Collapsed="true">
+    <Position X="12.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WinterException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Winter::CreateBeanFailedEx" Collapsed="true">
+    <Position X="14.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WinterException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Winter::SetPropertyFailedEx" Collapsed="true">
+    <Position X="17" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WinterException.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Winter::WinterLog" Collapsed="true">
+    <Position X="21.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAMAAAAAABGACAAAAAAAAAQDQEABAAAAAAA=</HashCode>
+      <FileName>WinterLog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Winter::IBeanFactory" Collapsed="true">
+    <Position X="19.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAQAAAAAAAABAgABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\develop\myproject\WinterFrameWork\WinterFrameWork\include\IBeanFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Winter::CLibraryParse_dcomImpl" Collapsed="true">
+    <Position X="19.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAgAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>CLibraryParse_dcomImpl.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Winter::CLibraryParser" Collapsed="true">
+    <Position X="21.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAABAAAAAAAAAAAAAAABAAAgAAAA=</HashCode>
+      <FileName>LibraryParser.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Winter::CXmlMine" Collapsed="true">
+    <Position X="23" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CCAAAAAgCAAAAAQAAAAAAAAAAAAEEAAgAAIAAAAAAAA=</HashCode>
+      <FileName>XmlMine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="__unnamed_struct_0012_1" Collapsed="true">
+    <Position X="5.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAABAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>xmlParser.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_struct_0012_2" Collapsed="true">
+    <Position X="1.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACABIAAAAAAAAA=</HashCode>
+      <FileName>xmlParser.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="XML" Collapsed="true">
+    <Position X="21.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAABAAAAAAggAgAAEQAABAAEAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>xmlParser.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_struct_0012_3" Collapsed="true">
+    <Position X="12.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>xmlParser.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="XMLResults" Collapsed="true">
+    <Position X="21.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAEAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>xmlParser.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="XMLClear" Collapsed="true">
+    <Position X="19.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAEAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>xmlParser.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="XMLAttribute" Collapsed="true">
+    <Position X="23" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>xmlParser.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="XMLNode" Collapsed="true">
+    <Position X="21.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ghJJTiMbCgUiAAKPJBwhDcgEB4IIARAkEAQmTIMAQkA=</HashCode>
+      <FileName>xmlParser.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="XMLNodeContents" Collapsed="true">
+    <Position X="23" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAABAAAAAAAAAAACAAAAAAAAAAAAIAAAAAAAQAAA=</HashCode>
+      <FileName>xmlParser.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ToXMLStringTool" Collapsed="true">
+    <Position X="19.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACABAAAAAEAEAgAAAAAAAAAAAAABAACAAAAgA=</HashCode>
+      <FileName>xmlParser.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="XMLParserBase64Tool" Collapsed="true">
+    <Position X="19.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEACAAIAAAAACAAABCAAAAAQAABAABAAAAAAAgA=</HashCode>
+      <FileName>xmlParser.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Winter::__unnamed_struct_0006_1" Collapsed="true">
+    <Position X="9.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DcomDefinition.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Winter::__unnamed_struct_0006_2" Collapsed="true">
+    <Position X="5.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>DcomDefinition.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Winter::__unnamed_struct_0006_3" Collapsed="true">
+    <Position X="1.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAABAAABAAAAAgAAAA=</HashCode>
+      <FileName>DcomDefinition.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Winter::__unnamed_struct_000a_1" Collapsed="true">
+    <Position X="8.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAIgAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>LibraryTemplate.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Winter::__unnamed_struct_000a_2" Collapsed="true">
+    <Position X="4.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAABAAIBAAAAAAABAA=</HashCode>
+      <FileName>LibraryTemplate.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="Winter::TXmlProperty" Collapsed="true">
+    <Position X="9.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DcomDefinition.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Winter::DcomBean" Collapsed="true">
+    <Position X="5.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DcomDefinition.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Winter::DComLibrary" Collapsed="true">
+    <Position X="1.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DcomDefinition.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Winter::TBean" Collapsed="true">
+    <Position X="8.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LibraryTemplate.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Winter::TLibrary" Collapsed="true">
+    <Position X="4.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LibraryTemplate.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Winter::DS_String" Collapsed="true">
+    <Position X="23" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\develop\myproject\WinterFrameWork\WinterFrameWork\include\basic.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Winter::StrValueList" Collapsed="true">
+    <Position X="21.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\develop\myproject\WinterFrameWork\WinterFrameWork\include\basic.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Winter::StrIterator" Collapsed="true">
+    <Position X="19.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\develop\myproject\WinterFrameWork\WinterFrameWork\include\basic.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Winter::TPointer" Collapsed="true">
+    <Position X="23" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\develop\myproject\WinterFrameWork\WinterFrameWork\include\basic.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="ALLXMLClearTag" Collapsed="true">
+    <Position X="5.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>xmlParser.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="XMLCharacterEntity" Collapsed="true">
+    <Position X="1.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>xmlParser.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="XMLTokenType" Collapsed="true">
+    <Position X="13.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>xmlParser.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="NextToken" Collapsed="true">
+    <Position X="12.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>xmlParser.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="XMLElementPosition" Collapsed="true">
+    <Position X="19.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>xmlParser.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Winter::DS_LIBRARYVEC" Collapsed="true">
+    <Position X="21.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XmlMine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Winter::DS_BEANSVEC" Collapsed="true">
+    <Position X="19.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XmlMine.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="XMLTokenTypeTag" Collapsed="true">
+    <Position X="13.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAQAAAgAEgAACAEAAAAAAAAAEAAAACAAAAA=</HashCode>
+      <FileName>xmlParser.cpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Attrib" Collapsed="true">
+    <Position X="19.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAABAAAAAAIAAAAAA=</HashCode>
+      <FileName>xmlParser.cpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="XMLStatus" Collapsed="true">
+    <Position X="19.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>xmlParser.cpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="XMLError" Collapsed="true">
+    <Position X="23" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAhQAABCAggACUAAAAgAIJwgAIAAAAAAAAQAAAQgAAA=</HashCode>
+      <FileName>xmlParser.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="XMLElementType" Collapsed="true">
+    <Position X="21.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAIAAAAAAAAAgAAAAAAAAAACIAAA=</HashCode>
+      <FileName>xmlParser.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="SimSun" Size="9" />
+</ClassDiagram>

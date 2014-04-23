@@ -1,0 +1,26 @@
+HKCR
+{
+	TestComLibrary.AggregAtion.1 = s 'AggregAtion Class'
+	{
+		CLSID = s '{1EA64394-4F7F-4DD2-A015-48F8C3D86D0F}'
+	}
+	TestComLibrary.AggregAtion = s 'AggregAtion Class'
+	{
+		CLSID = s '{1EA64394-4F7F-4DD2-A015-48F8C3D86D0F}'
+		CurVer = s 'TestComLibrary.AggregAtion.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {1EA64394-4F7F-4DD2-A015-48F8C3D86D0F} = s 'AggregAtion Class'
+		{
+			ProgID = s 'TestComLibrary.AggregAtion.1'
+			VersionIndependentProgID = s 'TestComLibrary.AggregAtion'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A20FAE97-AEC5-4E1B-AAFE-987AFB138466}'
+		}
+	}
+}

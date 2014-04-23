@@ -1,0 +1,55 @@
+// TestComLibrary.idl : IDL source for TestComLibrary
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (TestComLibrary.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(543370AB-CA7B-4D43-A3F5-55B15CCF7BA2),
+	dual,
+	nonextensible,
+	helpstring("ITestAction Interface"),
+	pointer_default(unique)
+]
+interface ITestAction : IDispatch{
+	[id(1), helpstring("method TestAdd")] HRESULT TestAdd( int a, int b);
+};
+[
+	object,
+	uuid(1FC1840A-5FAC-4112-864C-D366D7E2B3C1),
+	dual,
+	nonextensible,
+	helpstring("IAggregAtion Interface"),
+	pointer_default(unique)
+]
+interface IAggregAtion : IDispatch{
+};
+[
+	uuid(A20FAE97-AEC5-4E1B-AAFE-987AFB138466),
+	version(1.0),
+	helpstring("TestComLibrary 1.0 Type Library")
+]
+library TestComLibraryLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(400DB0F9-BB41-4ACD-A4EB-2219019F4F28),
+		helpstring("TestAction Class")
+	]
+	coclass TestAction
+	{
+		[default] interface ITestAction;
+	};
+	[
+		uuid(1EA64394-4F7F-4DD2-A015-48F8C3D86D0F),
+		helpstring("AggregAtion Class")
+	]
+	coclass AggregAtion
+	{
+		[default] interface IAggregAtion;
+	};
+};

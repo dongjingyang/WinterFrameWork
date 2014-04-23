@@ -1,0 +1,30 @@
+import "docobj.idl";
+
+[
+	object,
+	dual,
+	uuid(2C2CD1DC-4B13-431e-B4CF-B0BABF76BFA7)
+] 
+#line 9 "d:\\develop\\myproject\\winterframework\\winterframework\\simpleattrcom\\interface.h"
+interface ISimpleAttrCom : IDispatch {
+	[id(1)] HRESULT  TestAdd();
+};
+
+
+[ version(1.0), uuid(2C79B821-E8E6-4442-97B5-A395AC979EC8) ]
+library SimpleAttrCom
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+	[
+		uuid(4ED3625F-9551-4cc0-81DA-864418A01D2D),
+		version(1.0)
+	] 
+#line 12 "d:\\develop\\myproject\\winterframework\\winterframework\\simpleattrcom\\simpleattrcomcom.h"
+	coclass CSimpleAttrComCom {
+		[default]	interface ISimpleAttrCom;
+	};
+
+}
+

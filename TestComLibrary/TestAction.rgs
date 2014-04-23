@@ -1,0 +1,26 @@
+HKCR
+{
+	TestComLibrary.TestAction.1 = s 'TestAction Class'
+	{
+		CLSID = s '{400DB0F9-BB41-4ACD-A4EB-2219019F4F28}'
+	}
+	TestComLibrary.TestAction = s 'TestAction Class'
+	{
+		CLSID = s '{400DB0F9-BB41-4ACD-A4EB-2219019F4F28}'
+		CurVer = s 'TestComLibrary.TestAction.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {400DB0F9-BB41-4ACD-A4EB-2219019F4F28} = s 'TestAction Class'
+		{
+			ProgID = s 'TestComLibrary.TestAction.1'
+			VersionIndependentProgID = s 'TestComLibrary.TestAction'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{A20FAE97-AEC5-4E1B-AAFE-987AFB138466}'
+		}
+	}
+}

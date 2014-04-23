@@ -1,0 +1,7 @@
+LIBRARY	"SmallCompoent"
+
+EXPORTS
+	DllCanUnloadNow     = DSDllCanUnloadNow		PRIVATE
+	DllGetClassObject   = DSDllGetClassObject	PRIVATE
+	DllRegisterServer   =DSDllRegisterServer	PRIVATE
+	DllUnregisterServer = DSDllUnregisterServer	PRIVATE

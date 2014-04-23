@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{579281aa-a005-4a07-8ce6-6131351caa26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xmlparser">
+      <UniqueIdentifier>{2dac84f0-04cc-4497-87d7-e630a8c93ebd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DcomXmlResource">
+      <UniqueIdentifier>{2590dc3d-9994-4fcd-b6c4-10d24018e1f5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="basic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Winterlog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xmlParser.cpp">
+      <Filter>xmlparser</Filter>
+    </ClCompile>
+    <ClCompile Include="CLibraryParse_dcomImpl.cpp">
+      <Filter>DcomXmlResource</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlMine.cpp">
+      <Filter>DcomXmlResource</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLResource.cpp">
+      <Filter>DcomXmlResource</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlResource_DcomImpl.cpp">
+      <Filter>DcomXmlResource</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DcomDefinition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileLogger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ILogAdapter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LibraryTemplate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WinterDefinition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WinterException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WinterLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\basic.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\IBeanFactory.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlParser.h">
+      <Filter>xmlparser</Filter>
+    </ClInclude>
+    <ClInclude Include="CLibraryParse_dcomImpl.h">
+      <Filter>DcomXmlResource</Filter>
+    </ClInclude>
+    <ClInclude Include="LibraryParser.h">
+      <Filter>DcomXmlResource</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlMine.h">
+      <Filter>DcomXmlResource</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="string.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="IResource.h">
+      <Filter>DcomXmlResource</Filter>
+    </CustomBuild>
+    <CustomBuild Include="XMLResource.h">
+      <Filter>DcomXmlResource</Filter>
+    </CustomBuild>
+    <CustomBuild Include="XmlResource_DcomImpl.h">
+      <Filter>DcomXmlResource</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>
