@@ -6,14 +6,14 @@
 
 namespace Winter
 {
-	class XmlResouce_DcomImpl:public CXmlMine::CXmlMine
+	class XmlResouce_DcomImpl :public CLibraryParser::CCLibraryParser
 	{
 	public:
 		XmlResouce_DcomImpl(const TCHAR* path);
 		virtual ~XmlResouce_DcomImpl();
 
 		HRESULT parseLibrary( XMLNode& xml, TLibrary& lib );
-
+	private:
 		HRESULT parseBean( XMLNode& xml, TBean& bean );
 
 		HRESULT parseProperty( XMLNode& xml, TProperty& prop, bool isProp );
@@ -22,8 +22,6 @@ namespace Winter
 
 		bool boolAttribute( const TString& value, const TString& name );
 	protected:
-	private:
-
 	};//class XmlResouce_DcomImpl
 }
 

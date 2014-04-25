@@ -123,9 +123,13 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AssemblyPlant.cpp" />
     <ClCompile Include="basic.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='testlib|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="Bean.cpp" />
+    <ClCompile Include="BeanModel.cpp" />
+    <ClCompile Include="RunningObjTable.cpp" />
     <ClCompile Include="Winterlog.cpp" />
     <ClCompile Include="xmlParser.cpp" />
     <ClCompile Include="CLibraryParse_dcomImpl.cpp" />
@@ -138,11 +142,15 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AssemblyPlant.h" />
+    <ClInclude Include="Bean.h" />
+    <ClInclude Include="BeanModel.h" />
     <ClInclude Include="DcomDefinition.h" />
     <ClInclude Include="FileLogger.h" />
     <ClInclude Include="ILogAdapter.h" />
     <ClInclude Include="LibraryTemplate.h" />
     <CustomBuild Include="string.h" />
+    <ClInclude Include="RunningObjTable.h" />
     <ClInclude Include="WinterDefinition.h" />
     <ClInclude Include="WinterException.h" />
     <ClInclude Include="WinterLog.h" />

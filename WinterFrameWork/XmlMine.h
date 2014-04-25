@@ -13,8 +13,8 @@ class CLibraryParser;
 class CLibraryParse_dcomImpl;
 namespace Winter
 {
-	typedef std::vector<TLibrary*>    DS_LIBRARYVEC;
-	typedef std::vector<TBean*>		DS_BEANSVEC;
+	typedef std::vector<shared_ptr<TLibrary>>    DS_LIBRARYVEC;
+	typedef std::vector<shared_ptr<TBean>>		DS_BEANSVEC;
 #ifndef ASSEMPARSER
 #define  ASSEMPARSER(libType,xml,lib)\
 	ASSEMPARSER_(libType,xml,lib)

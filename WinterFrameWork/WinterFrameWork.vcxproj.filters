@@ -22,6 +22,9 @@
     <Filter Include="DcomXmlResource">
       <UniqueIdentifier>{2590dc3d-9994-4fcd-b6c4-10d24018e1f5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="beanFactory">
+      <UniqueIdentifier>{52bd822e-9d8f-435d-9366-7188660408ce}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="basic.cpp">
@@ -44,6 +47,18 @@
     </ClCompile>
     <ClCompile Include="XmlResource_DcomImpl.cpp">
       <Filter>DcomXmlResource</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyPlant.cpp">
+      <Filter>beanFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="RunningObjTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BeanModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bean.cpp">
+      <Filter>beanFactory</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -85,6 +100,18 @@
     </ClInclude>
     <ClInclude Include="XmlMine.h">
       <Filter>DcomXmlResource</Filter>
+    </ClInclude>
+    <ClInclude Include="AssemblyPlant.h">
+      <Filter>beanFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="RunningObjTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BeanModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Bean.h">
+      <Filter>beanFactory</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -29,7 +29,7 @@ namespace Winter
 		int i, pos=0, n = rootNode.nChildNode(libTag);
 		for(i=0; i<n; i++)
 		{
-			TLibrary *plib = new TLibrary;
+			auto plib = make_shared<TLibrary>();
 			XMLNode libNode = rootNode.getChildNode(libTag, &pos);
 			parseLibrary(libNode, *plib);
 			this->m_vecLibrary.push_back(plib);
@@ -40,8 +40,6 @@ namespace Winter
 
 	CXmlMine::~CXmlMine()
 	{
-		for(size_t i=0; i<this->m_vecLibrary.size(); i++)
-			delete this->m_vecLibrary[i];
 	}
 
 	HRESULT CXmlMine::parseLibrary( XMLNode& xml, TLibrary& lib )

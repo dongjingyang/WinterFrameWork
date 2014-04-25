@@ -36,6 +36,6 @@ TEST_F(CXmlMineTest, testListLibrary)
 
 	for (size_t i = 0; i < vecTemp->size(); i++)
 	{
-		EXPECT_EQ(((TLibrary*)((*vecTemp)[i]))->tName, _T("SmallCompoent.dll"));
+		EXPECT_EQ((((*vecTemp)[i]))->tName, _T("SmallCompoent.dll"));
 	}
 }
