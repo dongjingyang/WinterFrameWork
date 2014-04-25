@@ -129,6 +129,7 @@
     </ClCompile>
     <ClCompile Include="Bean.cpp" />
     <ClCompile Include="BeanModel.cpp" />
+    <ClCompile Include="Bean_dcomImpl.cpp" />
     <ClCompile Include="RunningObjTable.cpp" />
     <ClCompile Include="Winterlog.cpp" />
     <ClCompile Include="xmlParser.cpp" />
@@ -145,6 +146,7 @@
     <ClInclude Include="AssemblyPlant.h" />
     <ClInclude Include="Bean.h" />
     <ClInclude Include="BeanModel.h" />
+    <ClInclude Include="Bean_dcomImpl.h" />
     <ClInclude Include="DcomDefinition.h" />
     <ClInclude Include="FileLogger.h" />
     <ClInclude Include="ILogAdapter.h" />

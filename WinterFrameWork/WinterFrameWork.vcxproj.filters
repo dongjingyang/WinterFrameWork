@@ -60,6 +60,9 @@
     <ClCompile Include="Bean.cpp">
       <Filter>beanFactory</Filter>
     </ClCompile>
+    <ClCompile Include="Bean_dcomImpl.cpp">
+      <Filter>beanFactory</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DcomDefinition.h">
@@ -111,6 +114,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Bean.h">
+      <Filter>beanFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Bean_dcomImpl.h">
       <Filter>beanFactory</Filter>
     </ClInclude>
   </ItemGroup>

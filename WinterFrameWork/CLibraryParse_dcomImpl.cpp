@@ -48,8 +48,8 @@ namespace Winter
 		XMLCSTR propsTag = _T("properties");
 		XMLCSTR argsTag = _T("constructor-arg");
 		XMLCSTR dependTag = _T("depends-on");
-		XMLCSTR name = beanNode.getAttribute(_T("progid"));
-		DXMLPARSEFAILD(name, "progid is null!!");
+		XMLCSTR name = beanNode.getAttribute(_T("name"));
+		DXMLPARSEFAILD(name, "name is null!!");
 		XMLCSTR strClsid = beanNode.getText();
 		DXMLPARSEFAILD(strClsid,"strCLsid is null!!");
 		spBean->tName = name;

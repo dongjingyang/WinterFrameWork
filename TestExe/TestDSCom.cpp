@@ -11,7 +11,7 @@ public:
 protected:
 	virtual void SetUp()
 	{
-		CoInitialize(NULL);
+		//CoInitialize(NULL);
 		HINSTANCE   hInst = LoadLibrary(_T("SmallCompoent.dll"));
 		ASSERT_NE((LONG)hInst,NULL);
 		typedef HRESULT   (__stdcall *pfnGetObjectFunc )(REFCLSID,REFIID,void**);
@@ -30,7 +30,7 @@ protected:
 	}
 	virtual void TearDown()
 	{
-		CoUninitialize();
+		//CoUninitialize();
 	}
 protected:
 			UTIL::com_ptr<ITestDsCom>  testDsCom;
