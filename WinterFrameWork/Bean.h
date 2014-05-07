@@ -5,17 +5,17 @@ namespace Winter
 	class CBean
 	{
 	public:
-		CBean();
-		virtual ~CBean();
+
+
 		class CCBean
 		{
 		public:
-			virtual HRESULT GetObject(DS_String lpcsObjId, void ** pOuter);
-		protected:
-		private:
+			virtual HRESULT GetBean(LPCTSTR lpcsObjId, void ** pOuter) = 0;
 		};
+		CBean(CCBean * pCCbean);
+		virtual ~CBean();
 	public:
-		HRESULT GetObject(DS_String lpcsObjId, void ** pOuter);
+		HRESULT GetBean(LPCTSTR lpcsObjId, void ** pOuter);
 	private:
 		CCBean  * _p;
 	};

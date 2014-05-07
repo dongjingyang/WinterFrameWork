@@ -25,6 +25,9 @@
     <Filter Include="beanFactory">
       <UniqueIdentifier>{52bd822e-9d8f-435d-9366-7188660408ce}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Dcom">
+      <UniqueIdentifier>{756a2f8d-fa0e-449e-aa69-675c2381de97}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="basic.cpp">
@@ -61,6 +64,12 @@
       <Filter>beanFactory</Filter>
     </ClCompile>
     <ClCompile Include="Bean_dcomImpl.cpp">
+      <Filter>beanFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="WinterFrameDcom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DcomRotPackeage.cpp">
       <Filter>beanFactory</Filter>
     </ClCompile>
   </ItemGroup>
@@ -119,6 +128,36 @@
     <ClInclude Include="Bean_dcomImpl.h">
       <Filter>beanFactory</Filter>
     </ClInclude>
+    <ClInclude Include="WinterFrameDcom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DcomRotPackeage.h">
+      <Filter>beanFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dcom\DCom.h">
+      <Filter>Dcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dcom\DComBase.h">
+      <Filter>Dcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dcom\DComClassImpl.h">
+      <Filter>Dcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dcom\DComUtility.h">
+      <Filter>Dcom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dcom\IDComBase.h">
+      <Filter>Dcom</Filter>
+    </ClInclude>
+    <ClInclude Include="dscom_all.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WinterInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WinterFarame.cpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="string.h">
@@ -136,5 +175,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
+    <None Include="Winterframe.def">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -6,8 +6,8 @@ namespace  UTIL
 #define DFAILED(x) { HRESULT _h_r_ = (x); if(FAILED(_h_r_)) return _h_r_; }
 #define DFAILEDV(x)	{ if(FAILED(x)) return; }
 #define DFAILEDP(x, _h_r_)	{ if(FAILED(x)) return _h_r_; }
-#define DFAILEDOK(x)  RFAILEDP(x, S_OK;)
-#define DFAILEDESFALSE(x) RFAILEDP(x, S_FALSE;)
+#define DFAILEDOK(x)  DFAILEDP(x, S_OK;)
+#define DFAILEDESFALSE(x) DFAILEDP(x, S_FALSE;)
 #define DFAILED2(x, hr) { HRESULT _h_r_ = (x); if (FAILED(_h_r_)) return _h_r_; if (hr == _h_r_) return hr; }
 
 #define DASSERT(x, _h_r_) { if(!(x)) return _h_r_; }

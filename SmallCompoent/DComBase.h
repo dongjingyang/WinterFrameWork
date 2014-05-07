@@ -7,6 +7,23 @@ namespace dscom
 {
 #define DS_DEFINE_IID(iface, uuid_string)	struct __declspec(uuid(uuid_string)) iface
 
+	//////////////////////////////////////////////////////////////////////////
+	// ROT:
+	//全局对象，随着需要创建
+	DS_DEFINE_IID(IDsRunningObjectTable, "{DF32DCC9-D4AB-4FE1-8252-803C56FF6315}");
+
+
+	interface IDsRunningObjectTable : public IDComBase
+	{
+	public:
+		STDMETHOD(Register)(const GUID& rpid, IDComBase *punk) = 0;
+		STDMETHOD(Revoke)(const GUID& rpid) = 0;
+		STDMETHOD(IsRunning)(const GUID& rpid) = 0;
+		STDMETHOD(GetObject)(const GUID& rpid, IDComBase **ppunk) = 0;
+		STDMETHOD(RevokeAll)() = 0;
+	};
+
+
 
 	//特殊类工厂
 	interface IDSClassFactory: public IClassFactory

@@ -2,8 +2,9 @@
 namespace Winter
 {
 
-	CBean::CBean()
+	CBean::CBean(CCBean* pCCbean):_p(pCCbean)
 	{
+
 	}
 
 
@@ -11,9 +12,9 @@ namespace Winter
 	{
 	}
 
-	HRESULT CBean::GetObject(DS_String lpcsObjId, void ** pOuter)
+	HRESULT CBean::GetBean(LPCTSTR lpcsObjId, void ** pOuter)
 	{
-		return _p->GetObject(lpcsObjId, pOuter);
+		return _p->GetBean(lpcsObjId, pOuter);
 	}
 
 }

@@ -21,7 +21,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='testlib|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -64,7 +64,7 @@
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='testlib|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)\bin\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <IncludePath>D:\develop\common\Window7 SDK\Include;$(IncludePath)</IncludePath>
     <LibraryPath>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\UnitTest\lib;$(LibraryPath)</LibraryPath>
@@ -87,6 +87,7 @@
       <SubSystem>Windows</SubSystem>
       <ImportLibrary>..\lib\$(TargetName).lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
+      <ModuleDefinitionFile>Winterframe.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -106,6 +107,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <TargetMachine>MachineX86</TargetMachine>
+      <ModuleDefinitionFile>Winterframe.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='testlib|Win32'">
@@ -121,33 +123,49 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <DisableSpecificWarnings>4005;4099</DisableSpecificWarnings>
     </ClCompile>
+    <Link>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+    </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyPlant.cpp" />
     <ClCompile Include="basic.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='testlib|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="Bean.cpp" />
     <ClCompile Include="BeanModel.cpp" />
     <ClCompile Include="Bean_dcomImpl.cpp" />
+    <ClCompile Include="DcomRotPackeage.cpp" />
     <ClCompile Include="RunningObjTable.cpp" />
+    <ClCompile Include="WinterFrameDcom.cpp" />
     <ClCompile Include="Winterlog.cpp" />
     <ClCompile Include="xmlParser.cpp" />
     <ClCompile Include="CLibraryParse_dcomImpl.cpp" />
     <ClCompile Include="XmlMine.cpp" />
     <ClCompile Include="XMLResource.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='testlib|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="XmlResource_DcomImpl.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='testlib|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Dcom\DCom.h" />
+    <ClInclude Include="..\Dcom\DComBase.h" />
+    <ClInclude Include="..\Dcom\DComClassImpl.h" />
+    <ClInclude Include="..\Dcom\DComUtility.h" />
+    <ClInclude Include="..\Dcom\IDComBase.h" />
     <ClInclude Include="AssemblyPlant.h" />
     <ClInclude Include="Bean.h" />
     <ClInclude Include="BeanModel.h" />
     <ClInclude Include="Bean_dcomImpl.h" />
     <ClInclude Include="DcomDefinition.h" />
+    <ClInclude Include="DcomRotPackeage.h" />
+    <ClInclude Include="dscom_all.h" />
     <ClInclude Include="FileLogger.h" />
     <ClInclude Include="ILogAdapter.h" />
     <ClInclude Include="LibraryTemplate.h" />
@@ -155,6 +173,11 @@
     <ClInclude Include="RunningObjTable.h" />
     <ClInclude Include="WinterDefinition.h" />
     <ClInclude Include="WinterException.h" />
+    <ClInclude Include="WinterFrameDcom.h" />
+    <ClCompile Include="WinterFarame.cpp">
+      <FileType>CppHeader</FileType>
+    </ClCompile>
+    <ClInclude Include="WinterInterface.h" />
     <ClInclude Include="WinterLog.h" />
     <ClInclude Include="..\include\basic.h" />
     <ClInclude Include="..\include\IBeanFactory.h" />
@@ -162,18 +185,22 @@
     <ClInclude Include="CLibraryParse_dcomImpl.h" />
     <CustomBuild Include="IResource.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='testlib|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </CustomBuild>
     <ClInclude Include="LibraryParser.h" />
     <ClInclude Include="XmlMine.h" />
     <CustomBuild Include="XMLResource.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='testlib|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </CustomBuild>
     <CustomBuild Include="XmlResource_DcomImpl.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='testlib|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
+    <None Include="Winterframe.def" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
