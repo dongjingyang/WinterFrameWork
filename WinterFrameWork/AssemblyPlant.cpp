@@ -36,8 +36,8 @@ namespace Winter
 			for (DS_BEANSVEC::const_iterator iterBean = vecBean->begin(); iterBean != vecBean->end();iterBean ++ )
 			{
 				shared_ptr<TBean> beanTemp = *iterBean;
-				auto spBean = make_shared<CBean>(new CBean_dcomImpl(beanTemp.get()));
-				m_Rot.Regesiter(beanTemp->tCLsid.c_str(), spBean.get());
+				auto spBean = make_shared<CBean*>(new CBean(new CBean_dcomImpl(beanTemp.get())));
+				CRunningObjTable::Instance().Regesiter(beanTemp->tCLsid.c_str(), *spBean.get());
 			}
 		}
 		return S_OK;

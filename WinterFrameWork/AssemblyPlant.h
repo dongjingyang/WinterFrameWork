@@ -11,7 +11,6 @@ namespace Winter
 		CAssemblyPlant(CXmlMine* xmlMine);
 		~CAssemblyPlant();
 	private:
-		CRunningObjTable	m_Rot;
 		HRESULT AssemblyLibrary(CXmlMine* xmlMine);
 	};
 }

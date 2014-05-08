@@ -17,5 +17,13 @@ public:
 	CSmallCompoent(void);
 	virtual ~CSmallCompoent();
 public:
+	STDMETHOD(init_class)(IDComBase * prot, IDComBase* punkOuter)
+	{
+		if (prot) { m_pRot = prot; }
+		if (punkOuter) { m_pUnknonwnOuter = punkOuter; }
+		return S_OK;
+	}
 	STDMETHOD(SayHelloWorld)(LPCTSTR lpszSaySth);
+private:
+	
 };

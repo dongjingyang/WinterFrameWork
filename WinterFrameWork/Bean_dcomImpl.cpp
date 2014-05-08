@@ -45,9 +45,10 @@ namespace Winter
 		IDSClassFactory* pfc = NULL;
 		pfnFunc(clsid, __uuidof(IDSClassFactory), (void**)&pfc);
 		HRTHREOWEX(pfc,NonValue, "IDSClassFactory is Null, the dll is not dscom dll", E_NOINTERFACE);
-		pfc->CreateInstance(NULL, &CDcomRotPackeage::Instance(), actionIid, (void**)&m_Obj);
-		HRTHREOWEX(m_Obj, NonValue, "pOuter is Null,the interface is not found", E_NOINTERFACE);
-		*pOuter = m_Obj;
+		pfc->CreateInstance(&CDcomRotPackeage::Instance(),NULL , __uuidof(IDComBase), (void**)&m_Obj);
+		HRTHREOWEX(m_Obj, NonValue, "IDComBase is Null ,the dll is noe dscom dll", E_NOINTERFACE);
+		m_Obj->QueryInterface(actionIid, (void**)&pOuter);
+		HRTHREOWEX(pOuter, NonValue, "pOuter is Null", E_NOINTERFACE);
 		return S_OK;
 	}
 

@@ -3,6 +3,7 @@
 #include "AssemblyPlant.h"
 #include "basic.h"
 #include "WinterException.h"
+#include "string.h"
 
 using namespace  Winter;
 CWinterFrameDcom::CWinterFrameDcom()
@@ -24,13 +25,19 @@ STDMETHODIMP CWinterFrameDcom::InitEnv(LPCTSTR lpszCfg)
 STDMETHODIMP CWinterFrameDcom::GetObject(const CLSID& clsid, const GUID& rpid, void **ppunk)
 {
 	HRESULT   hr = E_FAIL;
-	DS_String pClsidBuf;
-	::StringFromGUID2(clsid, (LPOLESTR)pClsidBuf.c_str(), MAX_GUID);
-	INVALIDARGRETURN(!pClsidBuf.empty());
 
-	DS_String pIidBuf;
-	::StringFromGUID2(rpid, (LPOLESTR)pIidBuf.c_str(), MAX_GUID);
+	shared_ptr<TCHAR> spClsid(new TCHAR[MAX_GUID]);
+	shared_ptr<TCHAR> spGuid(new TCHAR[MAX_GUID]);
 
-	CRunningObjTable::Instance().GetObject(pClsidBuf.c_str(), pIidBuf.c_str(),ppunk);
+
+	::StringFromGUID2(clsid, (LPOLESTR)spClsid.get(), MAX_GUID);
+	INVALIDARGRETURN(_tcslen(spClsid.get()));
+	ver(spClsid.get());
+
+	::StringFromGUID2(rpid, (LPOLESTR)spGuid.get(), MAX_GUID);
+	INVALIDARGRETURN(_tcslen(spGuid.get()));
+	ver(spGuid.get());
+
+	CRunningObjTable::Instance().GetObject(spClsid.get(), spGuid.get(), ppunk);
 	return S_OK;
 }

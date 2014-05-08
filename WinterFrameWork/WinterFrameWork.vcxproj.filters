@@ -72,6 +72,9 @@
     <ClCompile Include="DcomRotPackeage.cpp">
       <Filter>beanFactory</Filter>
     </ClCompile>
+    <ClCompile Include="WinterFarame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DcomDefinition.h">
@@ -154,9 +157,6 @@
     </ClInclude>
     <ClInclude Include="WinterInterface.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="WinterFarame.cpp">
-      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

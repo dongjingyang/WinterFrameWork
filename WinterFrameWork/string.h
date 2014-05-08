@@ -13,6 +13,21 @@ namespace Winter
 		oss << value;
 		return oss.str();
 	}
+
+	//È¥³ý×Ö·û´®¿Õ¸ñ
+	static void ver(LPTSTR str)
+	{
+		int i, n = _tcslen(str);
+
+		TCHAR *p = str;
+		for (i = 0; i < n;)
+		{
+			if (*p != _T(' '))
+				str[i++] = *p;
+			p++;
+		}
+		str[i] = _T('');
+	}
 }
 
 #endif // string_h__

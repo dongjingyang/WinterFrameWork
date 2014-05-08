@@ -19,6 +19,5 @@ CSmallCompoent::~CSmallCompoent()
 
 STDMETHODIMP CSmallCompoent::SayHelloWorld( LPCTSTR lpszSaySth )
 {
-	//MessageBox(NULL,NULL,lpszSaySth,NULL);
 	return S_OK;
 }
