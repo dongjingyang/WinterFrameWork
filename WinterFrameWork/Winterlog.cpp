@@ -21,6 +21,7 @@ WinterLog::~WinterLog()
 {
 	if( this->isDefault) 
 		delete this->Logger;
+	///test git 
 }
 
 /** Get this singleton's instance */
